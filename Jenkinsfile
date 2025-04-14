@@ -14,7 +14,7 @@ pipeline {
         }
         stage('Running app locally'){
             steps{
-                sh "npm app.js"
+                sh "node app.js"
             }
         }
     }
