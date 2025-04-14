@@ -12,5 +12,10 @@ pipeline {
                 sh "npm install"
             }
         }
+        stage('Running app locally'){
+            steps{
+                sh "npm app.js"
+            }
+        }
     }
 }
